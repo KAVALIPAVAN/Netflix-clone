@@ -4,8 +4,10 @@ import { createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, si
 import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { toast } from "react-toastify";
 
+const apiKey = process.env.VITE_API_KEY;
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCx_8SefjMx9wP2iOjO16wAxY3PogWM4U0",
+  apiKey: apiKey,
   authDomain: "netflex-clone-d0740.firebaseapp.com",
   projectId: "netflex-clone-d0740",
   storageBucket: "netflex-clone-d0740.appspot.com",
